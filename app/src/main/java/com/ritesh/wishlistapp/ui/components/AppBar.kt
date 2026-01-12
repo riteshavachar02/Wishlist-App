@@ -1,4 +1,4 @@
-package com.ritesh.wishlistapp
+package com.ritesh.wishlistapp.ui.components
 
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
@@ -19,6 +19,7 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import com.ritesh.wishlistapp.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

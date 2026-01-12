@@ -1,4 +1,4 @@
-package com.ritesh.wishlistapp
+package com.ritesh.wishlistapp.ui.screens
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -14,7 +14,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import com.ritesh.wishlistapp.data.DummyWish
+import com.ritesh.wishlistapp.ui.components.AppBar
+import com.ritesh.wishlistapp.R
+import com.ritesh.wishlistapp.ui.navigation.Screen
+import com.ritesh.wishlistapp.ui.components.WishItem
+import com.ritesh.wishlistapp.viewmodel.WishViewModel
+import com.ritesh.wishlistapp.data.model.DummyWish
 
 @Composable
 fun HomeScreen(
@@ -26,7 +31,8 @@ fun HomeScreen(
         topBar = {
             AppBar(
                 title = "Wishlist"
-            )},
+            )
+        },
         floatingActionButton = {
             FloatingActionButton(
                 onClick = {

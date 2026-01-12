@@ -1,4 +1,4 @@
-package com.ritesh.wishlistapp
+package com.ritesh.wishlistapp.ui.components
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
+import com.ritesh.wishlistapp.R
 
 @Composable
 fun WishTextField(

@@ -1,9 +1,9 @@
-package com.ritesh.wishlistapp
+package com.ritesh.wishlistapp.di
 
 import android.content.Context
 import androidx.room.Room
-import com.ritesh.wishlistapp.data.WishDatabase
-import com.ritesh.wishlistapp.data.WishRepository
+import com.ritesh.wishlistapp.data.local.WishDatabase
+import com.ritesh.wishlistapp.data.repository.WishRepository
 
 object Graph {
 

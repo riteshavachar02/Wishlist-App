@@ -1,12 +1,13 @@
-package com.ritesh.wishlistapp
+package com.ritesh.wishlistapp.viewmodel
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.ritesh.wishlistapp.data.Wish
-import com.ritesh.wishlistapp.data.WishRepository
+import com.ritesh.wishlistapp.data.model.Wish
+import com.ritesh.wishlistapp.data.repository.WishRepository
+import com.ritesh.wishlistapp.di.Graph
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.launch

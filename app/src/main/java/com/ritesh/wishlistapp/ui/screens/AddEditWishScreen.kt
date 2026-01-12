@@ -1,4 +1,4 @@
-package com.ritesh.wishlistapp
+package com.ritesh.wishlistapp.ui.screens
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -19,6 +19,10 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
+import com.ritesh.wishlistapp.ui.components.AppBar
+import com.ritesh.wishlistapp.R
+import com.ritesh.wishlistapp.ui.components.WishTextField
+import com.ritesh.wishlistapp.viewmodel.WishViewModel
 
 @Composable
 fun AddEditWishScreen(
@@ -29,10 +33,10 @@ fun AddEditWishScreen(
     Scaffold(
         topBar = {
             AppBar(
-                title = if(id != 0) stringResource(id = R.string.title_Update_wish)
+                title = if (id != 0) stringResource(id = R.string.title_Update_wish)
                 else stringResource(id = R.string.title_add_wish),
             )
-            {navController.navigateUp()}
+            { navController.navigateUp() }
         }
     ) {
         Column(

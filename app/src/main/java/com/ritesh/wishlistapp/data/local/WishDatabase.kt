@@ -1,7 +1,8 @@
-package com.ritesh.wishlistapp.data
+package com.ritesh.wishlistapp.data.local
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
+import com.ritesh.wishlistapp.data.model.Wish
 
 @Database(
     entities = [Wish::class],

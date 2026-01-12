@@ -1,5 +1,7 @@
-package com.ritesh.wishlistapp.data
+package com.ritesh.wishlistapp.data.repository
 
+import com.ritesh.wishlistapp.data.local.WishDao
+import com.ritesh.wishlistapp.data.model.Wish
 import kotlinx.coroutines.flow.Flow
 
 class WishRepository(
