@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -37,12 +38,10 @@ fun AppBar(
                     contentDescription = null
                 )
             }
-        } else {
-            null
         }
     }
 
-    TopAppBar(
+    CenterAlignedTopAppBar(
         title = {
             Text(
                 text = title,
@@ -65,4 +64,28 @@ fun AppBar(
             actionIconContentColor = Color.Transparent
         )
     )
+
+//    TopAppBar(
+//        title = {
+//            Text(
+//                text = title,
+//                modifier = Modifier
+//                    .padding(start = 4.dp)
+//                    .heightIn(max = 24.dp),
+//                style = MaterialTheme.typography.titleLarge.copy(
+//                    fontWeight = FontWeight.Bold,
+//                    fontFamily = FontFamily.Monospace
+//                ),
+//                textAlign = TextAlign.Center
+//            )
+//        },
+//        navigationIcon = navigationIcon,
+//        colors = TopAppBarColors(
+//            containerColor = colorResource(id = R.color.teal_200),
+//            scrolledContainerColor = colorResource(id = R.color.teal_200),
+//            navigationIconContentColor = colorResource(id = R.color.white) ,
+//            titleContentColor = colorResource(id = R.color.white),
+//            actionIconContentColor = Color.Transparent
+//        )
+//    )
 }
